@@ -1,0 +1,28 @@
+@import "../../../../Styles/mixin.scss";
+.btn{
+    background-color: var(--primary-color, #ffbc11);
+    color: var(--text-color, rgba(0, 0, 0, 1));
+    padding: 1rem 1.5rem;
+
+    &:hover{
+        color: var(--white-color, #fff);
+    }
+}
+.btnLg{
+    padding: 1rem 2.5rem;
+}
+.btnBase{
+    border-radius: .3125rem;
+    -webkit-border-radius: .3125rem;
+    -moz-border-radius: .3125rem;
+    -ms-border-radius: .3125rem;
+    -o-border-radius: .3125rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    @include prefix(box-shadow, 0 0 10px 0 rgba(0, 0, 0, 0.1));
+    transition: all .3s ease;
+
+    &:hover{
+        opacity: .9;
+    }
+}

@@ -1,0 +1,41 @@
+/* Tajwal Font */
+@font-face {
+    font-family: "Tajawal", sans-serif;
+    src: url("../Fonts/Tajawal-Light.ttf"), format("ttf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tajawal", sans-serif;
+    src: url("../Fonts/Tajawal-Regular.ttf"), format("ttf");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tajawal", sans-serif;
+    src: url("../Fonts/Tajawal-Medium.ttf"), format("ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: "Tajawal", sans-serif;
+    src: url("../Fonts/Tajawal-Bold.ttf"), format("ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Tajawal", sans-serif;
+    src: url("../Fonts/Tajawal-ExtraBold.ttf"), format("ttf");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
