@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './Button.module.scss';
 
-function Button({text, customStyle = false}) {
+function Button({text, customStyle = false,additionalClass=false}) {
     return (
         <button
-        className={customStyle ? `${s.btnBase}` : `${s.btnBase} ${s.btn}`}
+        className={additionalClass ? `${s.btn} ${s[additionalClass]}` : `${s.btn}`}
         style={customStyle ? customStyle :{}}
         >
             {text}

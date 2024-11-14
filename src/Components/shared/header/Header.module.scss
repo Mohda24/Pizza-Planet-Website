@@ -1,0 +1,52 @@
+@import "../../../Styles/mixin.scss";
+
+.header{
+    padding: 1rem 0;
+}
+.header>div{
+    @include center-x-y;
+    justify-content: space-between;
+}
+.addToCart{
+    width: 2rem;
+    height: 2rem;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+
+    @include medium{
+        display: none;
+    }
+
+    & .link{
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white-color, #fff);
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: var(--text-color,black);
+        }
+
+        &.active{
+            color: var(--text-color,black);
+        }
+        
+}
+
+}
+.logo{
+    user-select: none;
+    width: 15rem;
+    height: auto;
+    
+
+    & img{
+        
+        object-fit: contain;
+    }
+}
+
+
+    

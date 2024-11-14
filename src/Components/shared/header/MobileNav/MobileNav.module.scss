@@ -1,0 +1,53 @@
+@import "../../../../Styles/mixin.scss";
+
+// style for mobile nav
+// Style for mobile logo
+.Mobile_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    background-color: var(--bg-color-hex, #e93037);
+    padding: 2.5rem 1rem;
+    height: 100vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.Mobile_nav>div {
+    width: 14.375rem;
+    margin: 0 auto 5rem;
+}
+
+.Mobile_nav>div>img {
+    object-fit: contain;
+}
+
+// style for mobile nav links
+.Mobile_links {
+    @include center-x-y;
+    flex-direction: column;
+    gap: .625rem;
+}
+
+// style every link in mobile nav
+.mobile_link {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+}
+}
+
+.mobile_active {
+    background-color: var(--white-color, #fff);
+    padding: 0.8rem 5rem;
+    border-radius: .3125rem;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 1;
+    }
+}
