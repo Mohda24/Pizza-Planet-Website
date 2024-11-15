@@ -1,52 +1,84 @@
 @import "../../../Styles/mixin.scss";
-
-.header{
+// header of the website
+.header {
     padding: 1rem 0;
 }
-.header>div{
+
+.header>div {
     @include center-x-y;
     justify-content: space-between;
 }
-.addToCart{
+// add to cart btn
+.addToCart {
     width: 2rem;
     height: 2rem;
 }
-.links{
+// links of the website
+.links {
     display: flex;
     gap: 2rem;
 
-    @include medium{
+    @include medium {
         display: none;
     }
 
-    & .link{
+    & .link {
         font-size: 1.2rem;
         font-weight: 700;
         color: var(--white-color, #fff);
         transition: all 0.3s ease;
 
-        &:hover{
-            color: var(--text-color,black);
+        &:hover {
+            color: var(--text-color, black);
         }
 
-        &.active{
-            color: var(--text-color,black);
+        &.active {
+            color: var(--text-color, black);
         }
-        
-}
+
+    }
 
 }
-.logo{
+// logo of the website
+.logo {
     user-select: none;
     width: 15rem;
     height: auto;
-    
 
-    & img{
-        
+
+    & img {
+
         object-fit: contain;
     }
 }
 
+// mobile icon
+.mobile_icon {
+    padding: 0.4rem 1rem;
+    background-color: var(--white-color, #fff);
+    border-radius: 0.5rem;
+    transition: opacity 0.3s ease;
+    display: none;
 
-    
+    @include medium {
+        display: block;
+    }
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.mobile_icon>img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+// btn icon mobile
+.header>div>button:nth-of-type(2) {
+    display: block;
+
+    @include medium {
+        display: none;
+    }
+}

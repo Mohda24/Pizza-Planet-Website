@@ -4,9 +4,9 @@ import {logo} from '../../../../Assets/Svg/svg'
 import Button from '../../button/Button'
 import { NavLink } from 'react-router-dom'
 
-function MobileNav() {
+function MobileNav({showMobileNav, setShowMobileNav}) {
     return (
-        <nav className={s.Mobile_nav}>
+        <nav className={`${s.Mobile_nav} ${showMobileNav && s["slide-in"] } ${showMobileNav===false && s["slide-out"]}`}>
             <div className="logo">
                 <img src={logo} alt="Logo for Planet Website" />
             </div>
