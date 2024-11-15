@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useContext,useEffect,useRef} from 'react'
 import TopHeader from './topHeader/TopHeader'
 import Button from './../../shared/button/Button'
 import {shop} from "./../../../Assets/Svg/svg"
@@ -7,22 +7,53 @@ import { NavLink } from 'react-router-dom'
 import { logo } from '../../../Assets/Svg/svg'
 import MobileNav from './MobileNav/MobileNav'
 import { menu } from './../../../Assets/Svg/svg'
-import { useState,useEffect,useRef } from 'react'
+import {HeaderContext} from './Context/HeaderContext'
+import Overllay from './Overllay/Overllay'
+import CartModal from './CartModal/CartModal'
+
+
+
 
 
 
 function Header() {
-    const [showMobileNav, setShowMobileNav] = useState(null)
+    const {showMobileNav, setShowMobileNav,overllay,setOverlay} = useContext(HeaderContext)
+    const mobileRef= useRef(null)
+
+    useEffect(() => {
+        if(!showMobileNav)return
+        const handleClick = (e) => {
+            if(mobileRef.current && !mobileRef.current.contains(e.target)){
+                setShowMobileNav(false)
+                setOverlay(false)
+            }
+        }
+        document.addEventListener('mousedown',handleClick)
+        return () => {
+            document.removeEventListener('mousedown',handleClick)
+        }
+    },[showMobileNav])
+
+    const handleMenu=()=>{
+        setShowMobileNav(true)
+        setOverlay(true)
+
+    }
+    
+
+    
     return (
         <>
         <TopHeader />
         <header className={s.header}>
             <div className="container">
-                <button className={s.mobile_icon}>
+                <button className={s.mobile_icon}
+                onClick={()=>handleMenu()}              
+                >
                     <img src={menu} alt="Icon for Menu button" />
                 </button>
-                <Button text=" اطلب عبر الإنترنت " additionalClass="large" />
-                <button className={s.addToCart} onClick={()=>setShowMobileNav(true)}>
+                <Button text=" اطلب عبر الإنترنت " additionalClass="large"  />
+                <button className={s.addToCart}>
                     <img src={shop} alt="Icon for Cart in shoping"  />
                 </button>
                 <ul className={s.links}>
@@ -35,7 +66,9 @@ function Header() {
                     <img src={logo} alt="Logo For Pizza Planet Website" />
                 </div>
             </div>
-            <MobileNav showMobileNav={showMobileNav} setShowMobileNav={setShowMobileNav}   />
+            <CartModal />
+            { overllay && <Overllay/> }
+            <MobileNav myRef={mobileRef} />
         </header>
         </>
     )

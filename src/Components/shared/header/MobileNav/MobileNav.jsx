@@ -1,13 +1,15 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import s from './MobileNav.module.scss'
 import {logo} from '../../../../Assets/Svg/svg'
 import Button from '../../button/Button'
 import { NavLink } from 'react-router-dom'
+import {HeaderContext} from '../Context/HeaderContext'
 
-function MobileNav({showMobileNav, setShowMobileNav}) {
+function MobileNav({myRef}) {
+    const {showMobileNav,setShowMobileNav} = React.useContext(HeaderContext)
     return (
-        <nav className={`${s.Mobile_nav} ${showMobileNav && s["slide-in"] } ${showMobileNav===false && s["slide-out"]}`}>
-            <div className="logo">
+        <nav ref={myRef} className={`${s.Mobile_nav} ${showMobileNav && s["slide-in"] } ${showMobileNav===false && s["slide-out"]}`}>
+            <div className="logo" onClick={()=>setShowMobileNav(false)}>
                 <img src={logo} alt="Logo for Planet Website" />
             </div>
             <ul className={s.Mobile_links}>
