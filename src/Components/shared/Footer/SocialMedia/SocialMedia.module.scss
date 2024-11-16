@@ -1,0 +1,32 @@
+@import "../../../../Styles/mixin.scss";
+
+// style for SocialMedia in Footer
+.SocialMedia{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    
+    // links
+    &>a{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: var(--primary-color,ffbc11);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-in;
+        box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2), 0 0 0 0.125rem #e93037;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    // icons
+    &>a>img{
+        width: 1.25rem;
+        height: 1.25rem;
+        object-fit: contain;
+        filter: invert(1);
+        -webkit-filter: invert(1);
+}
+}

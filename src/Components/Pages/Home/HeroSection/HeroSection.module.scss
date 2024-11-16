@@ -1,0 +1,81 @@
+@import "../../../../Styles/mixin.scss";
+
+// Hero Section
+.HeroSection{
+    padding: 2.5rem 1.875rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.25rem;   
+
+    @include medium {
+        flex-direction: column-reverse;
+        
+    }
+}
+
+// Hero Section Content
+.HeroSectionContent{
+    width: 50%;
+    color: white;
+    text-align: end;
+
+    @include medium {
+        width: 100%;
+        text-align: center;
+    }
+    // Hero Section content Image
+    &>.HeroImage{
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-right:auto ;
+
+        @include medium {
+            margin: 0 auto;
+        }
+
+    }
+    // Hero Section content Title
+    &>h1{
+        font-size: 3.75rem;
+        font-weight: 700;
+        margin: 1.25rem 0;
+
+        @include medium {
+            font-size: 2.5rem;
+        }
+
+        @include small {
+            font-size: 2rem;
+        }
+    }
+    // Hero Section content Description
+    &>p{
+        font-size: 1.25rem;
+        margin: 1.25rem 0;
+        color: rgba($color: white, $alpha: 0.8);
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    // Hero Section content Buttons
+    &>.HeroBtns{
+        @include center-x-y;
+        justify-content: flex-start;
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+        flex-direction: row-reverse;
+
+        @include medium {
+            justify-content: center;}
+    }
+
+}
+//  Hero Section Image
+.HeroSectionImage{
+    max-width: 43.75rem;
+    height: 100%;
+    flex: 1;
+
+    @include medium {
+        margin: 0 auto;
+    }
+}

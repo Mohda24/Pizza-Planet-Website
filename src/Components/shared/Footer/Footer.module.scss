@@ -1,0 +1,95 @@
+@import "../../../Styles/mixin.scss";
+footer{
+    padding: 2.5rem 0;
+    color: white;
+    @include medium{
+        padding: 1.25rem 0;
+    }
+}
+.footerDetail{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 2.5rem 0;
+    gap: 1.25rem;
+
+    @include medium{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include small{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include very-small{
+        grid-template-columns: 1fr;
+    }
+}
+.FooterContact{
+    grid-column: span 2; 
+    @include center-x-y;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include medium{
+        grid-column: 1/-1;
+        margin-bottom: 1.25rem;
+        order: -1;
+        align-items: center;
+        margin-bottom: 1.25rem
+    }
+
+    @include small{
+        align-items: flex-end;
+    }
+    
+
+    &>div{
+        width: 15rem;
+        margin-bottom: 1.5625rem;
+
+
+        &>img{
+            object-fit: contain;
+        }
+    }
+    
+    &>p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.6;
+        font-weight:500;
+        letter-spacing: 0.5px;
+        text-align: end;
+        max-width:21.25rem;
+
+        @include medium{
+            max-width: unset;
+        }
+
+    
+        
+    }
+
+    &>a{
+        padding: 0.625rem 1.25rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        margin-top: 1.25rem;
+        display: flex;
+        gap: 0.625rem;
+        align-items: center;
+        transition: opacity 0.3s ease-in;
+        background: var(--primary-color);
+        border-radius: 62.4375rem;
+        box-shadow: 0 0.3125rem 0.625rem rgba(0,0,0,0.2);
+        &:hover
+
+{
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+

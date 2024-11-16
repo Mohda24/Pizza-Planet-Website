@@ -32,7 +32,18 @@
     width: 100%;
     margin-top: 1.25rem;
     text-align: center;
-    
+}
+
+// style for button of Hero Section componnent
+
+.btnHero{
+    background-color: black;
+    color: white;
+
+    &:hover{
+        color: var(--primary-color, #ffbc11);
+        opacity: .9;
+    }
 }
 
 

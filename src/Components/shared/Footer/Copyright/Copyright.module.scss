@@ -1,0 +1,30 @@
+@import "../../../../Styles//mixin.scss";
+// style for Copyright in Footer
+.Copyright{
+    @include center-x-y;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+
+    @include small{
+        flex-direction: column-reverse;
+        gap: 1.25rem;
+    }
+}
+// style for text in Copyright in Footer
+.Copyright>p{
+    font-size: 1rem;
+    direction: ltr;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--white-color, #fff);
+    font-weight:500;
+    letter-spacing: 0.5px;
+    text-align: end;
+    max-width:21.25rem;
+    margin-top: 10px;
+
+    @include medium{
+        max-width: unset;
+    }
+}
