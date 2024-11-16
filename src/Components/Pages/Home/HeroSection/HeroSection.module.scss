@@ -1,41 +1,59 @@
 @import "../../../../Styles/mixin.scss";
 
 // Hero Section
-.HeroSection{
+.HeroSection {
     padding: 2.5rem 1.875rem;
     display: flex;
     flex-direction: row-reverse;
-    gap: 1.25rem;   
+    gap: 1.25rem;
 
     @include medium {
         flex-direction: column-reverse;
-        
+
     }
 }
 
 // Hero Section Content
-.HeroSectionContent{
+.HeroSectionContent {
     width: 50%;
     color: white;
     text-align: end;
+    transform: translateY(3.125rem);
+    opacity: 0;
+
 
     @include medium {
         width: 100%;
         text-align: center;
+        transform: translateY(2.125rem);
+        -webkit-transform: translateY(2.125rem);
+        -moz-transform: translateY(2.125rem);
+        -ms-transform: translateY(2.125rem);
+        -o-transform: translateY(2.125rem);
     }
+
+    @include small {
+        transform: translateY(1.125rem);
+        -webkit-transform: translateY(1.125rem);
+        -moz-transform: translateY(1.125rem);
+        -ms-transform: translateY(1.125rem);
+        -o-transform: translateY(1.125rem);
+}
+
     // Hero Section content Image
-    &>.HeroImage{
+    &>.HeroImage {
         width: 6.25rem;
         height: 6.25rem;
-        margin-right:auto ;
+        margin-right: auto;
 
         @include medium {
             margin: 0 auto;
         }
 
     }
+
     // Hero Section content Title
-    &>h1{
+    &>h1 {
         font-size: 3.75rem;
         font-weight: 700;
         margin: 1.25rem 0;
@@ -48,16 +66,18 @@
             font-size: 2rem;
         }
     }
+
     // Hero Section content Description
-    &>p{
+    &>p {
         font-size: 1.25rem;
         margin: 1.25rem 0;
         color: rgba($color: white, $alpha: 0.8);
         font-weight: 300;
         line-height: 1.5;
     }
+
     // Hero Section content Buttons
-    &>.HeroBtns{
+    &>.HeroBtns {
         @include center-x-y;
         justify-content: flex-start;
         gap: 1.25rem;
@@ -65,17 +85,59 @@
         flex-direction: row-reverse;
 
         @include medium {
-            justify-content: center;}
+            justify-content: center;
+        }
     }
 
 }
+
 //  Hero Section Image
-.HeroSectionImage{
+.HeroSectionImage {
     max-width: 43.75rem;
     height: 100%;
     flex: 1;
+    opacity: 0;
+    transform: translateY(-3.125rem);
+
 
     @include medium {
         margin: 0 auto;
+        transform: translateY(-2.125rem);
+        -webkit-transform: translateY(-2.125rem);
+        -moz-transform: translateY(-2.125rem);
+        -ms-transform: translateY(-2.125rem);
+        -o-transform: translateY(-2.125rem);
     }
+
+    @include small {
+        transform: translateY(-1.125rem);
+
+}
+}
+
+
+
+// Animation of Hero Section
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeImageIn {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 900ms ease forwards;
+    -webkit-animation: fadeIn 900ms ease forwards;
+}
+
+.fadeImageIn {
+    animation: fadeImageIn 900ms ease forwards;
+    -webkit-animation: fadeImageIn 900ms ease forwards;
 }

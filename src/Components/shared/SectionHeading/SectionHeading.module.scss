@@ -1,0 +1,50 @@
+@import "../../../Styles/mixin.scss";
+
+.TitleHeading{
+    @include center-x-y;
+    flex-direction: column;
+    color: black;
+    gap: 1rem;
+    transform: translateX(10px);
+    opacity: 0;
+
+    &>h2{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1.25rem;
+
+
+
+        @include small {
+            font-size: 2.5rem;
+        }
+        
+    }
+    &>p{
+        font-size: 1.25rem;
+        line-height: 1.5;
+        font-weight: 400;
+        text-align: center;
+        width: 83%;
+
+
+        @include small {
+            width: 100%;
+        }
+    }
+
+}
+
+// Animation Of Heading
+@keyframes fadeInUp {
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+
+}
+}
+.TitleHeading-Anim{
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+

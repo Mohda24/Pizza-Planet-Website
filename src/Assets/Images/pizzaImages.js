@@ -16,7 +16,10 @@ import r15 from './r15.webp';
 import r16 from './r16.webp';
 import zayton from './wra.webp';
 import pizza from './pizza.webp';
+import p1 from './p1.webp';
+import p2 from './p2.webp';
+import p3 from './p3.webp';
 
-export {r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16,zayton,pizza};
+export {r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16,zayton,pizza,p1,p2,p3};
 
 
