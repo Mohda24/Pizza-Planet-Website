@@ -12,6 +12,12 @@
 .addToCart {
     width: 2rem;
     height: 2rem;
+
+    @include small {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: auto;
+    }
 }
 // links of the website
 .links {
@@ -45,6 +51,10 @@
     width: 15rem;
     height: auto;
 
+    @include medium {
+        width: 13rem;
+    }
+
 
     & img {
 
@@ -66,6 +76,10 @@
 
     &:hover {
         opacity: 0.9;
+    }
+
+    @include small{
+        margin-left: 1.25rem;
     }
 }
 

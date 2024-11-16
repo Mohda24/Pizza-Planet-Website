@@ -17,7 +17,7 @@ import CartModal from './CartModal/CartModal'
 
 
 function Header() {
-    const {showMobileNav, setShowMobileNav,overllay,setOverlay} = useContext(HeaderContext)
+    const {showMobileNav, setShowMobileNav,overllay,setOverlay,setCartModal} = useContext(HeaderContext)
     const mobileRef= useRef(null)
 
     useEffect(() => {
@@ -39,6 +39,10 @@ function Header() {
         setOverlay(true)
 
     }
+    const handleModal=()=>{
+        setCartModal(true)
+        setOverlay(true)
+    }
     
 
     
@@ -53,7 +57,7 @@ function Header() {
                     <img src={menu} alt="Icon for Menu button" />
                 </button>
                 <Button text=" اطلب عبر الإنترنت " additionalClass="large"  />
-                <button className={s.addToCart}>
+                <button className={s.addToCart} onClick={handleModal}>
                     <img src={shop} alt="Icon for Cart in shoping"  />
                 </button>
                 <ul className={s.links}>
