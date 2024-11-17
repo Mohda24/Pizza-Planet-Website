@@ -4,6 +4,7 @@ import SectionPizzaPlanet from './SectionPizzaPlanet/SectionPizzaPlanet'
 import SectionPizzaAdresse from './SectionPizzaAdresse/SectionPizzaAdresse'
 import SectionBrowse from './SectionBrowse/SectionBrowse'
 import SectionTasting from './SectionTasting/SectionTasting'
+import SectionArticles from './SectionArticles/SectionArticles'
 
 
 
@@ -17,6 +18,7 @@ function Home() {
                 <SectionPizzaAdresse/>
                 <SectionBrowse/>
                 <SectionTasting/>
+                <SectionArticles/>
         </main>
         </>
     )
