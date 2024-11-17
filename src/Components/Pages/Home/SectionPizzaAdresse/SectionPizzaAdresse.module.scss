@@ -1,0 +1,107 @@
+@import "../../../../Styles//mixin.scss";
+// section pizza adresse
+.PizzaAdresseSection{
+    background-color: black;
+    color: white;
+    position: relative;
+    padding-block: 20px;
+
+    // Shape of Top the section
+    & .DecorativeTop{
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 100%;
+        height: 1.25rem;
+
+    }
+    & .DecorativeBottom{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 1.25rem;
+
+    }
+
+
+
+    // pizza planet container
+    & .PizzaAdresseContainer{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            @include small{
+                flex-direction: column;
+            }
+    }
+
+    // pizza image
+    & .pizzaPlanetImg{
+        width: 50%;
+        max-width: 46.875rem;
+        height: 100%;
+
+        @include small{
+            width: 100%;
+            max-width: 100%;
+            height: 31.25rem;
+        }
+
+        
+    }
+    // pizza planet detail
+    & .pizzaPlanetDatail{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 6.25rem;
+
+        @include small{
+            width: 100%;
+            padding: 3.125rem .9375rem;
+            gap: 3.125rem;
+        }
+
+        // pizza about part 
+        & .aboutPlanet{
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+
+            &>h3{
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            &>p{
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+
+        }
+
+        // pizza adresse part
+        & .planetAdresse{
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        // pizza btns part
+        & .PizzaPlanetBtns{
+            display: flex;
+            gap: 1.25rem;
+
+            @include small{
+                flex-direction: column;
+                gap: 1.25rem;
+                align-items: center;
+            }
+        }
+
+    }
+}

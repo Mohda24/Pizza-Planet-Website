@@ -1,0 +1,32 @@
+@import "../../../../../Styles/mixin.scss";
+
+
+.AdresseItem {
+    display: flex;
+    align-items: center;
+    gap: .3125rem;
+    
+
+
+    & .AdresseIcon {
+        width: 2.7rem;
+        height: 2.7rem;
+        background-color: var(--primary-color);
+        padding: 0.3rem;
+        border-radius: .125rem;
+        -webkit-border-radius: .125rem;
+        -moz-border-radius: .125rem;
+        -ms-border-radius: .125rem;
+        -o-border-radius: .125rem;
+        flex-shrink: 0;
+    }
+
+    & .Adresse{
+        font-weight: 500;
+        font-size: 1.4rem;
+        color: white;
+        direction: ltr;
+        text-align:right;
+        
+    }
+}

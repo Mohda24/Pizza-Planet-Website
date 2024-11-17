@@ -14,7 +14,6 @@ import insta from './instagram-brands-solid.svg';
 import facebook from './facebook-brands-solid.svg'
 import linkden from './linkedin-brands-solid.svg'
 import github from './github-brands-solid.svg'
-
 import logo from './logo.svg';
 import mail from './mail.svg';
 import map from './map.svg';
@@ -32,6 +31,8 @@ import v4 from './v4.svg';
 import v5 from './v5.svg';
 import v6 from './v6.svg';
 import vue from './vue.svg';
+import DecorativeTop from './DecorativeTop.svg';
+import DecorativeBottom from './DecorativeBottom.svg';
 
-export {a1, a2, a3, a4, c1, c2, c3, c4, c5, c6, c7, c8, insta, logo, mail, map, menu, o1, o2, o3, o4, phone, shop, v1, v2, v3, v4, v5, v6, vue,facebook,linkden,github};
+export {a1, a2, a3, a4, c1, c2, c3, c4, c5, c6, c7, c8, insta, logo, mail, map, menu, o1, o2, o3, o4, phone, shop, v1, v2, v3, v4, v5, v6, vue,facebook,linkden,github,DecorativeTop,DecorativeBottom};
 
