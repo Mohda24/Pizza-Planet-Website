@@ -5,7 +5,7 @@ function SectionCard({img,title}) {
     return (
         <div className={s.SectionCart}>
             <div className={s.SectionCardWrapp}>
-                <img src={img} alt="Picture for card" />
+                <img src={img} loading='lazy' alt="Picture for card" />
             </div>
             <h3>{title}</h3>
 

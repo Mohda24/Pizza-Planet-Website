@@ -7,7 +7,7 @@ import { pizzaBigMen } from "../../../../Assets/Images/pizzaImages"
 function SectionPizzaAdresse() {
     return (
         <section className={s.PizzaAdresseSection}>
-            <img src={DecorativeTop} className={s.DecorativeTop} alt="Decortive shape of top section" />
+            <img src={DecorativeTop} loading='lazy' className={s.DecorativeTop} alt="Decortive shape of top section" />
             <div className={s.PizzaAdresseContainer}>
                 <div className={s.pizzaPlanetImg}>
                     <img src={pizzaBigMen} alt="Background for image of bigmen pizza" />

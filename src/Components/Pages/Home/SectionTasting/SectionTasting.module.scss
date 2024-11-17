@@ -1,0 +1,95 @@
+@import "../../../../Styles/mixin.scss";
+
+.SectionTasting{
+    display: flex;
+    align-items: center;
+    color: white;
+
+    @include small{
+        flex-direction: column-reverse;
+    }
+}
+// tasting image
+.TastingImage{
+    width: 50%;
+    height: 100%;
+    max-height: 43.75rem;
+    max-width: 43.75rem;
+    overflow: hidden;
+    position: relative;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+
+
+    }
+
+
+
+    @include small{
+        width: 100%;
+        height: 17rem;
+    }
+}
+
+// tasting content
+.TastingContent{
+    width: 50%;
+    padding: 3.125rem 1.875rem;
+
+    @include small{
+        width: 100%;
+        padding-block: .9375rem ;
+
+    }
+
+    .Tastingwrap{
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-right: auto;
+    }
+
+    h2{
+        font-size: 3.75rem;
+        font-weight: 800;
+        margin: 1.25rem 0;
+
+        @include medium{
+            font-size: 2.5rem;
+        }
+
+        @include small{
+            font-size: 1.875rem;
+        }
+    }
+
+    p{
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 1.25rem 0;
+        line-height: 1.5;
+
+        @include small{
+            font-size: 1rem;
+        }
+
+        
+    }
+
+    .TastingBtns{
+        display: flex;
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+        justify-content: center;
+        margin: 1.25rem 0;
+
+
+        
+    }
+}
