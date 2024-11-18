@@ -2,9 +2,9 @@ import React from 'react'
 import s from './Form.module.scss'
 import Button from '../button/Button'
 
-function Form() {
+function Form({addisClass=false}) {
     return (
-        <form className={s.form} action="#">
+        <form className={`${addisClass ? s[addisClass] :""} ${s.form}`} action="#">
             <div className={s.formEmail}>
                 <label htmlFor="email">بريدك الإلكتروني</label>
                 <input type="email" name='email' placeholder='name@gmail.com' required />

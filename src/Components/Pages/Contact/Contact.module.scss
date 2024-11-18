@@ -1,0 +1,32 @@
+@import "../../../Styles/index.scss";
+
+// style for contact page
+
+.contact{
+    background-color: white;
+    padding: var(--Section-Padding) 0;
+
+    &>div{
+        display: flex;
+        align-items: center;
+
+        @include small{
+            flex-direction: column;
+        }
+    }
+
+
+}
+
+.contactImage{
+    width: 40%;
+
+    @include small{
+        width: 100%;
+    }
+
+
+    &>img{
+        object-fit: contain;
+    }
+}

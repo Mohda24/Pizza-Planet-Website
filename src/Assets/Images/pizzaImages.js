@@ -24,7 +24,8 @@ import Tastingpizza from './home-pizzalplanet.webp';
 import firstPizza from './first-pizza.webp';
 import pizzaDelivery from './pizza-delivery.webp';
 import iconicPizzas from './iconic-pizzas-p-500.webp';
+import tp1 from './tp.webp';
 
-export {r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16,zayton,pizza,p1,p2,p3,pizzaBigMen,Tastingpizza,firstPizza,pizzaDelivery,iconicPizzas};
+export {r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16,zayton,pizza,p1,p2,p3,pizzaBigMen,Tastingpizza,firstPizza,pizzaDelivery,iconicPizzas,tp1};
 
 
