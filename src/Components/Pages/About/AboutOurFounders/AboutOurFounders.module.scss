@@ -1,0 +1,119 @@
+@import "../../../../Styles//mixin.scss";
+
+.AboutOurFounders {
+    padding: var(--Section-Padding) 0;
+    background-color: black;
+    color: white;
+
+
+
+    // first founder
+    .firstFounder {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        @include medium {
+            flex-direction: column;
+        }
+
+
+        .FirstStory {
+            width: 50%;
+
+            @include medium {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+
+                @include medium {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+
+                @include small {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.7;
+
+                @include medium {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // second founder
+    .SecondFounder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        @include medium {
+            flex-direction: column;
+        }
+
+
+        .SecondStory {
+            width: 50%;
+
+            @include medium {
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+
+                @include medium {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+
+                @include small {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.7;
+
+                @include medium {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    // Image wrapper of Founders
+    .ImageWrapper {
+        width: 50%;
+        border-radius: .625rem;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+        @include medium {
+            width: 100%;
+
+        }
+    }
+
+}

@@ -1,0 +1,64 @@
+@import "../../../../../Styles/index.scss";
+
+// style for the AboutOurTeam card component
+
+.Card {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+
+        span{
+            color: var(--bg-color-hex, #e93037);
+        }
+    }
+
+    .cardImage {
+        width: 16rem;
+        height: 16rem;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: var(--bg-color-hex, #e93037);
+
+    }
+
+    .cardContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease-in-out;
+            -webkit-transition: color 0.3s ease-in-out;
+            -moz-transition: color 0.3s ease-in-out;
+            -ms-transition: color 0.3s ease-in-out;
+            -o-transition: color 0.3s ease-in-out;
+}
+
+        h5 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: var(--bg-color-hex, #e93037);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: var(--text-color);
+            text-align: center;
+        }
+    }
+}
