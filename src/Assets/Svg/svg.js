@@ -2,6 +2,10 @@ import a1 from './mohda1.svg';
 import a2 from './mohda2.svg';
 import a3 from './mohda3.svg';
 import a4 from './mohda4.svg';
+import a5 from './mohda5.svg';
+import a6 from './mohda6.svg';
+import a7 from './mohda7.svg';
+import a8 from './mohda8.svg';
 import c1 from './c1.svg';
 import c2 from './c2.svg';
 import c3 from './c3.svg';
@@ -34,5 +38,5 @@ import vue from './vue.svg';
 import DecorativeTop from './DecorativeTop.svg';
 import DecorativeBottom from './DecorativeBottom.svg';
 
-export {a1, a2, a3, a4, c1, c2, c3, c4, c5, c6, c7, c8, insta, logo, mail, map, menu, o1, o2, o3, o4, phone, shop, v1, v2, v3, v4, v5, v6, vue,facebook,linkden,github,DecorativeTop,DecorativeBottom};
+export {a1, a2, a3, a4,a5,a6,a7,a8, c1, c2, c3, c4, c5, c6, c7, c8, insta, logo, mail, map, menu, o1, o2, o3, o4, phone, shop, v1, v2, v3, v4, v5, v6, vue,facebook,linkden,github,DecorativeTop,DecorativeBottom};
 

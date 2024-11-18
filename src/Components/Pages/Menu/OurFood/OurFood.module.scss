@@ -1,0 +1,16 @@
+@import "../../../../Styles/mixin.scss";
+
+.OurFoodSection{
+    background-color: white;
+    padding: var(--Section-Padding);
+    color: black;
+    text-align: center;
+}
+
+.OurFoodCards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 5rem 0;
+}
