@@ -5,6 +5,7 @@ import SectionPizzaAdresse from './SectionPizzaAdresse/SectionPizzaAdresse'
 import SectionBrowse from './SectionBrowse/SectionBrowse'
 import SectionTasting from './SectionTasting/SectionTasting'
 import SectionArticles from './SectionArticles/SectionArticles'
+import ContactUs from './ContactUs/ContactUs'
 
 
 
@@ -19,6 +20,7 @@ function Home() {
                 <SectionBrowse/>
                 <SectionTasting/>
                 <SectionArticles/>
+                <ContactUs/>
         </main>
         </>
     )

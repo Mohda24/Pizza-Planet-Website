@@ -1,0 +1,57 @@
+@import "../../../Styles/mixin.scss";
+
+
+// style for form
+.form{
+    width: 70%;
+    margin: 0 auto;
+    direction: ltr;
+    margin-top: 4rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include medium{
+        width: 80%;
+    }
+
+    @include small{
+        width: 100%;
+    }
+
+
+
+
+    & input,textarea{
+        padding: .9375rem;
+        background-color: #f9fafb;
+        color: black;
+        border: 1px solid #e3e3e3;
+        font-size: 1rem;
+        border-radius: .3125rem;
+        -webkit-border-radius: .3125rem;
+        -moz-border-radius: .3125rem;
+        -ms-border-radius: .3125rem;
+        -o-border-radius: .3125rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
+        &::placeholder{
+            color: #b1b1b1;
+            font-size: 1rem;
+        }
+
+        &:focus{
+            outline: none;
+            border: 1px solid #007bff;
+        }
+}
+
+    .formEmail,.formSubject,.formMessage{
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+        
+    }
+
+}
