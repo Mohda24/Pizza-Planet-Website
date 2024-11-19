@@ -1,0 +1,88 @@
+@import "../../../Styles/mixin.scss";
+
+
+// style for PageNotFound component
+
+.NotFoundPage{
+    width: 60vw;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include small{
+        width:100%;
+    }
+
+
+    &>.NotFoundContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        position: absolute;
+        top: 14rem;
+
+        &>h1{
+            font-size: 3.75rem;
+            font-weight: 700;
+            margin:  0;
+            text-align: center;
+            color: white;
+
+            @include medium {
+                font-size: 3rem;
+            }
+            @include small {
+                font-size: 2.5rem;
+            }
+        }
+    
+        &>p{
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 1rem 0;
+            text-align: center;
+            line-height: 1.5;
+            color: rgba($color: #fff, $alpha: 0.9);
+            margin: 1.5rem 0;
+            @include small {
+                font-size: 1.3rem;
+            }
+
+
+        }
+
+        &>a{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white-color);
+            background-color: transparent;
+            border: 1px solid var(--white-color);
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            border-radius :62.4375rem;
+            &:hover{
+                background-color: var(--primary-color);
+                border-color: var(--primary-color);
+            }
+        }
+
+        
+
+    }
+
+   
+
+}
+
+.notFoundAnimation{
+    width: 25rem;
+    height: 25rem;
+}
+
+
