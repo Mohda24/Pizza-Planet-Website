@@ -20,10 +20,19 @@ function MobileNav({myRef}) {
                 <img src={logo} alt="Logo for Planet Website" />
             </div>
             <ul className={s.Mobile_links}>
-                <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/contact"  onClick={handleMenu}> اتصل بنا </NavLink>
-                <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/menu"  onClick={handleMenu}> القائمة </NavLink>
-                <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/about"  onClick={handleMenu}> من نحن </NavLink>
-                <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/"  onClick={handleMenu}> الرئيسية </NavLink>
+                <li>
+                    <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/contact"  onClick={handleMenu}> اتصل بنا </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/menu"  onClick={handleMenu}> القائمة </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/about"  onClick={handleMenu}> من نحن </NavLink>
+                </li>
+                <li>
+                    <NavLink className={({ isActive }) => isActive ? `${s.mobile_link} ${s.mobile_active}` : s.mobile_link} to="/"  onClick={handleMenu}> الرئيسية </NavLink>
+                </li>
+                
             </ul>
             <Button text=" اطلب عبر الإنترنت " additionalClass="mobile_btn" />
 

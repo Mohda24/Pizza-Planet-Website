@@ -61,10 +61,18 @@ function Header() {
                     <img src={shop} alt="Icon for Cart in shoping"  />
                 </button>
                 <ul className={s.links}>
-                    <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/contact" > اتصل بنا </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/menu" > القائمة </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/about" > من نحن </NavLink>
-                    <NavLink className={({ isActive }) => isActive ?  `${s.link} ${s.active}` : s.link} to="/" > الرئيسية </NavLink>
+                    <li>
+                        <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/contact" > اتصل بنا </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/menu" > القائمة </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link} to="/about" > من نحن </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={({ isActive }) => isActive ?  `${s.link} ${s.active}` : s.link} to="/" > الرئيسية </NavLink>
+                    </li>
                 </ul>
                 <div className={s.logo}>
                     <img src={logo} alt="Logo For Pizza Planet Website" />
