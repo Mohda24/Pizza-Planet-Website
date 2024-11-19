@@ -34,14 +34,17 @@
     @include center-x-y;
     flex-direction: column;
     gap: .625rem;
+
 }
 
 // style every link in mobile nav
 .mobile_link {
+    display: inline-block;
     padding: .5rem 1rem;
     font-size: 1.25rem;
     font-weight: 300;
     transition: opacity 0.3s ease;
+ 
 
     &:hover {
         opacity: 0.7;

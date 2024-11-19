@@ -19,7 +19,7 @@ function Footer() {
                 <img src={logo} alt="A logo of Pizza" />
                 </div>
                 <p>موثوق في أكثر من 100 دولة و5 مليون عميل. لديك أي استفسار؟</p>
-                <a alt="link for contact us"> اتصل بنا </a>
+                <a href='#' alt="link for contact us"> اتصل بنا </a>
             </div>
           </div>
           <Copyright/>
