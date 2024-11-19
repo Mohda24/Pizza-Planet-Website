@@ -26,7 +26,7 @@ function HeroSection() {
                 </div>
             </div>
             <div ref={myref2} className={`${s.HeroSectionImage} ${isVisible2 ? s["fadeImageIn"] :""}`}>
-                <img src={pizza} loading='lazy' alt="Picture of Pizza" />
+                <img src={pizza} alt="Picture of Pizza" />
             </div>
 
         </div>
