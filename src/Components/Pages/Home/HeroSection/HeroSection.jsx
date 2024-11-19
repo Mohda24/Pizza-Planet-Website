@@ -16,7 +16,7 @@ function HeroSection() {
         <div className={s.HeroSection}>
             <div className={`${s.HeroSectionContent} ${isVisible ? s['fadeIn'] :''}`} ref={myref}>
                 <div className={s.HeroImage}>
-                    <img src={zayton} alt="" />
+                    <img src={zayton} alt="icon" />
                 </div>
                 <h1>أفضل مكان لتناول البيتزا بسهولة</h1>
                 <p>نقدم تجربة فريدة لعشاق البيتزا بمكونات طازجة وخيارات متنوعة تناسب جميع الأذواق، في أجواء مريحة وعصرية.</p>
@@ -26,7 +26,7 @@ function HeroSection() {
                 </div>
             </div>
             <div ref={myref2} className={`${s.HeroSectionImage} ${isVisible2 ? s["fadeImageIn"] :""}`}>
-                <img src={pizza} alt="Picture of Pizza " />
+                <img src={pizza} loading='lazy' alt="Picture of Pizza" />
             </div>
 
         </div>

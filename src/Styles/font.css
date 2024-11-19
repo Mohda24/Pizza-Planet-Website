@@ -1,8 +1,7 @@
 /* Tajwal Font */
 @font-face {
     font-family: "Tajawal";
-    src: url("../Fonts/Tajawal-Light.woff2") format("woff2"),
-         url("../Fonts/Tajawal-Light.woff") format("woff"),
+    src: 
          url("../Fonts/Tajawal-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
@@ -10,8 +9,7 @@
 
 @font-face {
     font-family: "Tajawal";
-    src: url("../Fonts/Tajawal-Regular.woff2") format("woff2"),
-         url("../Fonts/Tajawal-Regular.woff") format("woff"),
+    src: 
          url("../Fonts/Tajawal-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
@@ -20,8 +18,7 @@
 
 @font-face {
     font-family: "Tajawal";
-    src: url("../Fonts/Tajawal-Medium.woff2") format("woff2"),
-         url("../Fonts/Tajawal-Medium.woff") format("woff"),
+    src: 
          url("../Fonts/Tajawal-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
@@ -29,8 +26,7 @@
 
 @font-face {
     font-family: "Tajawal";
-    src: url("../Fonts/Tajawal-Bold.woff2") format("woff2"),
-         url("../Fonts/Tajawal-Bold.woff") format("woff"),
+    src: 
          url("../Fonts/Tajawal-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
