@@ -7,7 +7,7 @@ function PizzaCard({img, name, price}) {
             <div className="cardImage">
                 <img loading='lazy' src={img} alt={`image card of ${img.split('.')[0]}`} />
             </div>
-            <h5>{name}</h5>
+            <h4>{name}</h4>
             <span>{price}</span>
         </div>
     )
