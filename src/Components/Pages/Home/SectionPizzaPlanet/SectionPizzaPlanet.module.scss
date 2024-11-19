@@ -28,5 +28,6 @@
 
     @include small {
         margin-top: 2rem;
+        flex-direction: column;
     }
 }
