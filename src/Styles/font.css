@@ -34,8 +34,7 @@
 
 @font-face {
     font-family: "Tajawal";
-    src: url("../Fonts/Tajawal-ExtraBold.woff2") format("woff2"),
-         url("../Fonts/Tajawal-ExtraBold.woff") format("woff"),
+    src: 
          url("../Fonts/Tajawal-ExtraBold.ttf") format("truetype");
     font-weight: 800;
     font-style: normal;
