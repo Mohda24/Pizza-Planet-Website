@@ -7,6 +7,7 @@ import SectionTasting from './SectionTasting/SectionTasting'
 import SectionArticles from './SectionArticles/SectionArticles'
 import ContactUs from './ContactUs/ContactUs'
 import Seo from '../../shared/Seo/Seo'
+import { pizza } from '../../../Assets/Images/pizzaImages'
 
 
 
@@ -20,8 +21,11 @@ function Home() {
                 keywords="Pizza, Best Pizza, Pizza Planet, Fresh Ingredients, Online Order, Pizza Delivery"
                 type="website"
                 name="Pizza Planet"
+                preImages={[pizza]}
             />
-            <HeroSection />
+            <HeroSection HeroImage={
+                pizza
+            } />
             <main id='Main'>
                 <SectionPizzaPlanet />
                 <SectionPizzaAdresse />

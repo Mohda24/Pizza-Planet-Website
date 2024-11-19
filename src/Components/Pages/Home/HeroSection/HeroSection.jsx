@@ -1,11 +1,11 @@
 import {React,useRef} from 'react'
-import { zayton ,pizza} from '../../../../Assets/Images/pizzaImages'
+import { zayton} from '../../../../Assets/Images/pizzaImages'
 import s from './HeroSection.module.scss'
 import Button from '../../../shared/button/Button' //
 import useOnScreen from '../../../../Hooks/UseOnScreen'
 
 
-function HeroSection() {
+function HeroSection({HeroImage}) {
     // HeroSection Animation
     const myref = useRef(null);
     const isVisible = useOnScreen(myref,{rootMargin: "0px", threshold: 0.1});
@@ -26,7 +26,7 @@ function HeroSection() {
                 </div>
             </div>
             <div ref={myref2} className={`${s.HeroSectionImage} ${isVisible2 ? s["fadeImageIn"] :""}`}>
-                <img src={pizza} alt="Picture of Pizza" />
+                <img src={HeroImage} alt="Picture of Pizza" />
             </div>
 
         </div>
