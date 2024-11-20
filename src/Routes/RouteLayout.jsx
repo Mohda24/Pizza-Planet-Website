@@ -16,5 +16,4 @@ function RouteLayout() {
         </div>
     )
 }
-
 export default RouteLayout
